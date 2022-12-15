@@ -30,7 +30,7 @@ const append=(message ,position)=>{
     messageInput.value= ''
  })
 //asking for the new user to enter name
-const name = prompt("Enter your namee");
+const name = prompt("Enter your name");
 socket.emit('new-user-joined',name);
 
 //informs all others in the chat that who has joned

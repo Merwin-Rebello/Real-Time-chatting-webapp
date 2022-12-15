@@ -11,7 +11,7 @@ io.on('connection',socket=>{  // anyone is joining new
 
     });
 // new-user-joined/ user-joined/ send /receive all are custom names so we can give any name
-    //while sending a message
+    //while sending a message to all
     socket.on('send', message =>{// if someone sends a message its will be sent to all
         socket.broadcast.emit('receive',{message:message,name:users[socket.id]})
     });
