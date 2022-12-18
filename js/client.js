@@ -7,7 +7,7 @@ const form =document.getElementById('send-container');
 const messageInput = document.getElementById('messageinput')
 const messagecontainer= document.querySelector('.container')
 //audio when new message is arrived
-var audio = new Audio('notify.mp3');
+const Audio = new Audio('notify.mp3');
 
 
 //this acts as a function which is been used every where
